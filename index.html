@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike | Ropa Deportiva de Alto Rendimiento</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración personalizada de Tailwind para colores y fuente -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mike-blue': '#2563EB', // Un azul eléctrico vibrante (blue-600)
+                        'mike-dark': '#1E3A8A', // Azul más oscuro para contraste (blue-800)
+                        'mike-light': '#F3F4F6', // Blanco grisáceo para secciones claras
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Aplicar fuente Inter globalmente y asegurar suavizado */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- 1. Navegación / Header -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-3xl font-extrabold text-mike-blue tracking-tighter">
+                MIKE
+            </a>
+            
+            <!-- Botón de Registro (visible en escritorio) -->
+            <div class="hidden sm:flex space-x-4 items-center">
+                <a href="#" class="text-gray-600 hover:text-mike-blue transition duration-300 font-medium">Colecciones</a>
+                <a href="#" class="text-gray-600 hover:text-mike-blue transition duration-300 font-medium">Novedades</a>
+                <button class="bg-mike-blue hover:bg-mike-dark text-white font-semibold py-2 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    Regístrate
+                </button>
+            </div>
+
+            <!-- Menú móvil (simplificado, solo mostraré el botón de registro) -->
+            <button class="sm:hidden bg-mike-blue hover:bg-mike-dark text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                Menú
+            </button>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section con CTA principal -->
+    <main>
+        <section class="bg-mike-light pt-16 pb-20 sm:pt-24 sm:pb-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p class="text-mike-blue text-sm uppercase font-bold mb-3 tracking-widest">
+                    Rinde al Máximo, Viste Mike.
+                </p>
+                <h1 class="text-5xl sm:text-7xl font-extrabold text-gray-900 leading-tight mb-6">
+                    Equipamiento <span class="text-mike-blue">Premium</span> para tu Deporte.
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+                    Descubre la fusión perfecta entre tecnología de tejidos y diseño innovador. Comodidad sin límites para cada entrenamiento.
+                </p>
+                
+                <!-- CTA Principal (Destacado) -->
+                <a href="#productos" class="inline-block bg-mike-blue hover:bg-mike-dark text-white font-black text-lg py-4 px-10 rounded-full shadow-xl transition duration-300 ease-in-out transform hover:scale-105 tracking-wider uppercase">
+                    🛒 Comprar Colección Ahora
+                </a>
+            </div>
+        </section>
+
+        <!-- 3. Sección de Imágenes de Producto (Con Imágenes Reales) -->
+        <section id="productos" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
+                    Nuestras Categorías Destacadas
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Producto 1: Ropa de Running -->
+                    <div class="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 ease-in-out">
+                        <!-- IMAGEN REAL: Running Performance -->
+                        <img src="https://images.unsplash.com/photo-1550345095-e01d782155c5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="" 
+                             class="w-full h-72 object-cover transition duration-500 group-hover:scale-105" 
+                             onerror="this.src='https://placehold.co/600x400/2563EB/ffffff?text=Running+Performance';" 
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-50 transition duration-500 flex items-end">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-white mb-1">Running</h3>
+                                <p class="text-white text-opacity-80">Ligereza y transpirabilidad para el camino.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2: Entrenamiento de Gimnasio -->
+                    <div class="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 ease-in-out">
+                        <!-- IMAGEN REAL: Entrenamiento de Gimnasio -->
+                        <img src="https://images.unsplash.com/photo-1549476483-cc49e327181c?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="" 
+                             class="w-full h-72 object-cover transition duration-500 group-hover:scale-105" 
+                             onerror="this.src='https://placehold.co/600x400/1E3A8A/ffffff?text=Gym+Workout+Collection';" 
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-50 transition duration-500 flex items-end">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-white mb-1">Entrenamiento</h3>
+                                <p class="text-white text-opacity-80">Soporte y elasticidad para cada repetición.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 3: Accesorios y Lifestyle -->
+                    <div class="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 ease-in-out">
+                        <!-- IMAGEN REAL: Lifestyle y Accesorios -->
+                        <img src="https://images.unsplash.com/photo-1628173491873-199b9222c83c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="" 
+                             class="w-full h-72 object-cover transition duration-500 group-hover:scale-105" 
+                             onerror="this.src='https://placehold.co/600x400/60A5FA/ffffff?text=Lifestyle+and+Accessories';" 
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-50 transition duration-500 flex items-end">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-white mb-1">Lifestyle</h3>
+                                <p class="text-white text-opacity-80">Comodidad y estilo fuera del campo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Sección de Testimonios -->
+        <section class="py-16 sm:py-24 bg-mike-light">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900">
+                    La Voz de Nuestros Atletas
+                </h2>
+                <p class="text-center text-xl text-gray-600 mb-12">
+                    Miles de deportistas ya confían en Mike.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Testimonio 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-mike-blue transform hover:scale-[1.02] transition duration-300">
+                        <p class="text-xl text-gray-700 italic mb-6">
+                            "La camiseta de running es increíblemente ligera. Sentí que podía correr más rápido y el tejido realmente ayuda a gestionar la humedad."
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center text-mike-blue font-bold">JD</div>
+                            <div>
+                                <p class="font-bold text-gray-900">Juan Díaz</p>
+                                <p class="text-sm text-gray-500">Maratonista Aficionado</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-mike-blue transform hover:scale-[1.02] transition duration-300">
+                        <p class="text-xl text-gray-700 italic mb-6">
+                            "Los leggings Mike son los mejores que he usado. El soporte es perfecto para levantamiento de pesas y mantienen la forma después de muchos lavados."
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center text-mike-blue font-bold">PM</div>
+                            <div>
+                                <p class="font-bold text-gray-900">Patricia Morales</p>
+                                <p class="text-sm text-gray-500">Entrenadora Personal</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-mike-blue transform hover:scale-[1.02] transition duration-300">
+                        <p class="text-xl text-gray-700 italic mb-6">
+                            "Necesitaba ropa que resistiera el entrenamiento funcional intenso. Mike no decepciona. Durabilidad y estilo en cada prenda."
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center text-mike-blue font-bold">AL</div>
+                            <div>
+                                <p class="font-bold text-gray-900">Andrés López</p>
+                                <p class="text-sm text-gray-500">Atleta de CrossFit</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CTA Final (Doble propósito: Compra y Registro) -->
+        <section class="bg-mike-blue py-16 sm:py-20">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold text-white mb-4">
+                    ¿Listo para Transformar tu Rendimiento?
+                </h2>
+                <p class="text-xl text-mike-light mb-8">
+                    Únete a la comunidad Mike y recibe un 15% de descuento en tu primera compra.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <!-- CTA Compra -->
+                    <a href="#productos" class="bg-white text-mike-blue font-black text-lg py-3 px-8 rounded-full shadow-2xl transition duration-300 ease-in-out transform hover:bg-gray-100 hover:scale-105 uppercase">
+                        Ver Tienda Completa
+                    </a>
+                    
+                    <!-- CTA Registro -->
+                    <button class="bg-transparent border-2 border-white text-white font-black text-lg py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:bg-white hover:text-mike-blue hover:scale-105 uppercase">
+                        Recibir Descuento (Regístrate)
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 6. Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-6">
+                
+                <!-- Columna 1: Logo -->
+                <div>
+                    <h3 class="text-2xl font-extrabold text-mike-blue tracking-tighter mb-2">MIKE</h3>
+                    <p class="text-sm text-gray-400">Innovación en cada movimiento.</p>
+                </div>
+
+                <!-- Columna 2: Tienda -->
+                <div>
+                    <h4 class="font-bold mb-3 uppercase text-gray-300">Tienda</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-mike-blue transition">Hombre</a></li>
+                        <li><a href="#" class="hover:text-mike-blue transition">Mujer</a></li>
+                        <li><a href="#" class="hover:text-mike-blue transition">Accesorios</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Soporte -->
+                <div>
+                    <h4 class="font-bold mb-3 uppercase text-gray-300">Soporte</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-mike-blue transition">Contacto</a></li>
+                        <li><a href="#" class="hover:text-mike-blue transition">Devoluciones</a></li>
+                        <li><a href="#" class="hover:text-mike-blue transition">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 4: Legal -->
+                <div>
+                    <h4 class="font-bold mb-3 uppercase text-gray-300">Legal</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-mike-blue transition">Política de Privacidad</a></li>
+                        <li><a href="#" class="hover:text-mike-blue transition">Términos de Servicio</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="pt-6 border-t border-gray-700 text-center">
+                <p class="text-sm text-gray-500">
+                    &copy; 2025 Mike Sportswear. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
